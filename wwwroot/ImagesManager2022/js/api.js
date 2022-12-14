@@ -85,7 +85,7 @@ function POST_LOGIN(loginInfo, successCallBack, errorCallBack) {
 
 function POST_USER(data, successCallBack, errorCallBack) {
     $.ajax({
-        url: "http://localhost:5000/accounts/register",
+        url: host + "/accounts/register",
         
         type: 'POST',
         contentType: 'application/json',
@@ -97,7 +97,7 @@ function POST_USER(data, successCallBack, errorCallBack) {
 
 function MODIFY_USER(user, successCallBack, errorCallBack) {
     $.ajax({
-        url: "http://localhost:5000/accounts/modify",
+        url: host + "/accounts/modify",
         headers : getBearerAuthorizationToken(),
         type: 'PUT',
         contentType: 'application/json',
@@ -111,7 +111,7 @@ function MODIFY_USER(user, successCallBack, errorCallBack) {
 
 function GET_USER(id, successCallBack, errorCallBack) {
     $.ajax({
-        url: "http://localhost:5000/accounts/index" + "/" + id,
+        url: host + "/accounts/index" + "/" + id,
         
         type: 'GET',
         success: user => { 
@@ -132,7 +132,7 @@ function RetrieveUser(){
 
 function GET_LOGOUT(userId, successCallBack, errorCallBack) {
     $.ajax({
-        url: "http://localhost:5000/accounts/logout/" + userId,
+        url: host + "/accounts/logout/" + userId,
         headers : getBearerAuthorizationToken(),
         type: 'GET',
         success: (data) => {successCallBack(data)},
@@ -142,7 +142,7 @@ function GET_LOGOUT(userId, successCallBack, errorCallBack) {
 
 function GET_VERIFY(verifyInfo, errorCallBack) {
     $.ajax({
-        url: "http://localhost:5000/accounts/verify?id="+verifyInfo.Id+"&code="+verifyInfo.code,
+        url: host + "/accounts/verify?id="+verifyInfo.Id+"&code="+verifyInfo.code,
         headers : getBearerAuthorizationToken(),
         type: 'GET',
         success: (data) => {console.log(data)},
@@ -152,7 +152,7 @@ function GET_VERIFY(verifyInfo, errorCallBack) {
 
 function DELETE_USER(userIdToDelete, errorCallBack) {
     $.ajax({
-        url: "http://localhost:5000/accounts/remove/"+userIdToDelete,
+        url: host + "/accounts/remove/"+userIdToDelete,
         headers : getBearerAuthorizationToken(),
         type: 'GET',
         success: (data) => {console.log(data)},

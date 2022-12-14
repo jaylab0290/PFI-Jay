@@ -1,0 +1,29 @@
+[
+    {
+        "Id": 3,
+        "Name": "math",
+        "Email": "math.bussiere@hotmail.ca",
+        "Password": "allo",
+        "AvatarGUID": "ed214070-7b21-11ed-a84b-39fec418b122",
+        "Created": 1669404582,
+        "VerifyCode": "verified"
+    },
+    {
+        "Id": 4,
+        "Name": "Jay Lab",
+        "Email": "jeremy.labelle@outlook.com",
+        "Password": "Bonjour",
+        "AvatarGUID": "5f07b680-7bed-11ed-a396-ab81b4eb6e17",
+        "Created": 1670009363,
+        "VerifyCode": "verified"
+    },
+    {
+        "Id": 6,
+        "Name": "Testeur",
+        "Email": "jgoodgoal@hotmail.ca",
+        "Password": "Bonjour",
+        "AvatarGUID": "be433540-7beb-11ed-a060-031fb188e1c4",
+        "Created": 1670965471,
+        "VerifyCode": "verified"
+    }
+]
